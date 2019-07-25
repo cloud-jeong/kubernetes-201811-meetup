@@ -356,7 +356,7 @@ k8s-3   NotReady   <none>   2m28s   v1.12.2
 **Calico** CNI 를 사용하기 위해 **kubectl** 명령어를 이용해 설치합니다. 
 
 ```bash
-kubectl apply -f https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
+kubectl apply -f kubectl apply -f https://docs.projectcalico.org/v3.8/manifests/calico.yaml
 
 clusterrole.rbac.authorization.k8s.io/calico-node created
 clusterrolebinding.rbac.authorization.k8s.io/calico-node created
@@ -411,7 +411,7 @@ taint "node-role.kubernetes.io/master:" not found
 Kubernetes 를 편하게 사용하기 위해 Dashboard 를 설치합니다.
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
+kubectl apply -f kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta1/aio/deploy/recommended.yaml
 
 secret/kubernetes-dashboard-certs created
 serviceaccount/kubernetes-dashboard created
